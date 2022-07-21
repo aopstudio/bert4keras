@@ -15,7 +15,7 @@ from bert4keras.snippets import DataGenerator, AutoRegressiveDecoder
 from keras.models import Model
 
 # 基本参数
-maxlen = 50
+maxlen = 100
 batch_size = 16
 steps_per_epoch = 100
 epochs = 1000
@@ -26,7 +26,7 @@ checkpoint_path = '/home/cenzhedong/nas/dataset/chinese_L-12_H-768_A-12/bert_mod
 dict_path = '/home/cenzhedong/nas/dataset/chinese_L-12_H-768_A-12/vocab.txt'
 
 # 训练样本。THUCNews数据集，每个样本保存为一个txt。
-txts = glob.glob('/home/cenzhedong/nas/dataset/THUCNews/星座/*.txt')
+txts = glob.glob('/home/cenzhedong/nas/dataset/THUCNews/*/*.txt')
 
 # 加载并精简词表，建立分词器
 token_dict, keep_tokens = load_vocab(
