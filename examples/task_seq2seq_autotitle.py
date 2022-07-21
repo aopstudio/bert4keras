@@ -26,7 +26,7 @@ checkpoint_path = '/home/cenzhedong/nas/dataset/chinese_L-12_H-768_A-12/bert_mod
 dict_path = '/home/cenzhedong/nas/dataset/chinese_L-12_H-768_A-12/vocab.txt'
 
 # 训练样本。THUCNews数据集，每个样本保存为一个txt。
-txts = glob.glob('/home/cenzhedong/nas/dataset/THUCNews/*/*.txt')
+txts = glob.glob('/home/cenzhedong/nas/dataset/THUCNews/彩票/*.txt')
 
 # 加载并精简词表，建立分词器
 token_dict, keep_tokens = load_vocab(
