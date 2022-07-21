@@ -15,10 +15,10 @@ from bert4keras.snippets import DataGenerator, AutoRegressiveDecoder
 from keras.models import Model
 
 # 基本参数
-maxlen = 256
+maxlen = 50
 batch_size = 16
-steps_per_epoch = 1000
-epochs = 10000
+steps_per_epoch = 100
+epochs = 1000
 
 # bert配置
 config_path = '/home/cenzhedong/nas/dataset/chinese_L-12_H-768_A-12/bert_config.json'
