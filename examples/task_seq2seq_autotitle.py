@@ -21,12 +21,12 @@ steps_per_epoch = 1000
 epochs = 10000
 
 # bert配置
-config_path = '/root/kg/bert/chinese_wwm_L-12_H-768_A-12/bert_config.json'
-checkpoint_path = '/root/kg/bert/chinese_wwm_L-12_H-768_A-12/bert_model.ckpt'
-dict_path = '/root/kg/bert/chinese_wwm_L-12_H-768_A-12/vocab.txt'
+config_path = '~/nas/dataset/chinese_L-12_H-768_A-12/bert_config.json'
+checkpoint_path = '~/nas/dataset/chinese_L-12_H-768_A-12/bert_model.ckpt'
+dict_path = '~/nas/dataset/chinese_L-12_H-768_A-12/vocab.txt'
 
 # 训练样本。THUCNews数据集，每个样本保存为一个txt。
-txts = glob.glob('/root/thuctc/THUCNews/*/*.txt')
+txts = glob.glob('~/nas/dataset/THUCNews/*/*.txt')
 
 # 加载并精简词表，建立分词器
 token_dict, keep_tokens = load_vocab(
